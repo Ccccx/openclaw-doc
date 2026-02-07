@@ -1,0 +1,99 @@
+{
+  "user_info": {
+    "name": "",
+    "age": 0,
+    "gender": "",
+    "height_cm": 0,
+    "weight_kg": 0.0,
+    "blood_type": "",
+    "allergies": [],
+    "chronic_conditions": [],
+    "family_history": []
+  },
+  "vitals": {
+    "blood_pressure": {
+      "systolic": 0,
+      "diastolic": 0,
+      "last_measured": ""
+    },
+    "heart_rate": {
+      "bpm": 0,
+      "last_measured": ""
+    },
+    "body_temperature": {
+      "celsius": 0.0,
+      "last_measured": ""
+    },
+    "respiratory_rate": {
+      "breaths_per_minute": 0,
+      "last_measured": ""
+    }
+  },
+  "lifestyle": {
+    "diet": {
+      "type": "",
+      "restrictions": [],
+      "notes": ""
+    },
+    "exercise": {
+      "frequency_per_week": 0,
+      "duration_minutes": 0,
+      "type": "",
+      "notes": ""
+    },
+    "sleep": {
+      "hours_per_night": 0.0,
+      "quality": "",
+      "notes": ""
+    },
+    "substances": {
+      "alcohol": {
+        "consumption": "",
+        "frequency": ""
+      },
+      "tobacco": {
+        "uses": false,
+        "type": "",
+        "frequency": ""
+      },
+      "caffeine": {
+        "consumption_cups_per_day": 0
+      }
+    }
+  },
+  "medications": [
+    {
+      "name": "",
+      "dosage": "",
+      "frequency": "",
+      "purpose": "",
+      "start_date": "",
+      "prescribed_by": ""
+    }
+  ],
+  "medical_history": {
+    "surgeries": [],
+    "hospitalizations": [],
+    "major_illnesses": [],
+    "vaccinations": []
+  },
+  "goals": {
+    "weight": {
+      "target_weight_kg": 0.0,
+      "timeline_weeks": 0
+    },
+    "fitness": {
+      "description": "",
+      "timeline_weeks": 0
+    },
+    "health_metrics": [
+      {
+        "metric": "",
+        "current_value": "",
+        "target_value": "",
+        "timeline_weeks": 0
+      }
+    ]
+  },
+  "last_updated": ""
+}

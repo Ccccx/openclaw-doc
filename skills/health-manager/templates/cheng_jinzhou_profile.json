@@ -1,0 +1,171 @@
+{
+  "user_info": {
+    "name": "程金周",
+    "age": null,
+    "gender": null,
+    "height_cm": 165,
+    "weight_kg": 76,
+    "blood_type": null,
+    "allergies": [],
+    "chronic_conditions": ["2型糖尿病", "糖尿病肾病", "脂肪肝"],
+    "family_history": []
+  },
+  "vitals": {
+    "bmi": {
+      "value": 27.9,
+      "status": "超重",
+      "last_measured": "2026-02-07"
+    },
+    "blood_pressure": {
+      "systolic": null,
+      "diastolic": null,
+      "last_measured": ""
+    },
+    "heart_rate": {
+      "bpm": null,
+      "last_measured": ""
+    },
+    "blood_glucose": {
+      "fasting_mmol_L": null,
+      "postprandial_mmol_L": null,
+      "recent_reading": {
+        "value": 9.9,
+        "unit": "mmol/L",
+        "status": "偏高",
+        "timestamp": "2026-02-07"
+      },
+      "tonight_reading": {
+        "value": 5.4,
+        "unit": "mmol/L",
+        "status": "达标",
+        "timestamp": "2026-02-07"
+      },
+      "target_range": {
+        "fasting": "4.4-7.0 mmol/L",
+        "postprandial": "<10.0 mmol/L"
+      }
+    },
+    "kidney_function": {
+      "proteinuria": {
+        "value": 711.61,
+        "unit": "mg/g",
+        "status": "蛋白尿",
+        "last_measured": "2026-02-07"
+      }
+    }
+  },
+  "lifestyle": {
+    "diet": {
+      "type": "糖尿病饮食",
+      "restrictions": ["低糖", "低脂", "低盐"],
+      "notes": "需要控制碳水化合物摄入"
+    },
+    "exercise": {
+      "frequency_per_week": null,
+      "duration_minutes": null,
+      "type": "",
+      "notes": "建议增加适量运动"
+    },
+    "sleep": {
+      "hours_per_night": null,
+      "quality": "",
+      "notes": ""
+    }
+  },
+  "medications": [
+    {
+      "name": "胰岛素",
+      "dosage": null,
+      "frequency": "三餐前",
+      "purpose": "血糖控制",
+      "start_date": ""
+    },
+    {
+      "name": "胰岛素",
+      "dosage": null,
+      "frequency": "睡前",
+      "purpose": "血糖控制",
+      "start_date": ""
+    },
+    {
+      "name": "胰激肽原酶肠溶片",
+      "dosage": null,
+      "frequency": null,
+      "purpose": "改善微循环",
+      "start_date": ""
+    },
+    {
+      "name": "非诺贝特软胶囊",
+      "dosage": null,
+      "frequency": null,
+      "purpose": "调脂",
+      "start_date": ""
+    },
+    {
+      "name": "普罗布考片",
+      "dosage": null,
+      "frequency": null,
+      "purpose": "抗氧化",
+      "start_date": ""
+    },
+    {
+      "name": "沙库巴曲缬沙坦钠片",
+      "dosage": null,
+      "frequency": null,
+      "purpose": "肾脏保护",
+      "start_date": ""
+    }
+  ],
+  "medical_history": {
+    "diagnoses": [
+      {
+        "condition": "2型糖尿病",
+        "diagnosed_date": ""
+      },
+      {
+        "condition": "糖尿病肾病",
+        "diagnosed_date": "",
+        "notes": "蛋白尿 711.61 mg/g"
+      },
+      {
+        "condition": "脂肪肝",
+        "diagnosed_date": ""
+      }
+    ],
+    "surgeries": [],
+    "hospitalizations": [],
+    "vaccinations": []
+  },
+  "goals": {
+    "weight": {
+      "current_kg": 76,
+      "target_weight_kg": 65,
+      "timeline_weeks": null,
+      "notes": "减重至 65kg 以下"
+    },
+    "blood_glucose": {
+      "fasting_target": "4.4-7.0 mmol/L",
+      "postprandial_target": "<10.0 mmol/L",
+      "notes": "控制血糖在目标范围内"
+    },
+    "kidney": {
+      "notes": "定期监测肾功能",
+      "frequency": "建议每3个月检查一次"
+    },
+    "liver": {
+      "notes": "改善脂肪肝",
+      "strategy": "控制饮食、增加运动、体重管理"
+    }
+  },
+  "health_summary": {
+    "status": "需要重点关注",
+    "priority_areas": [
+      "血糖控制",
+      "肾功能保护",
+      "体重管理"
+    ],
+    "notes": "综合管理糖尿病及其并发症"
+  },
+  "last_updated": "2026-02-07",
+  "timezone": "Asia/Shanghai"
+}

@@ -22,6 +22,10 @@ OpenClaw AI Assistant 的日常使用文档和资源。
 
 **位置**: `/opt/openclaw/skills/health-manager/`
 
+**个人健康档案**:
+- [程金周 - JSON版](/opt/openclaw/skills/health-manager/templates/cheng_jinzhou_profile.json)
+- [程金周 - Markdown版](/opt/openclaw/skills/health-manager/templates/cheng_jinzhou_profile.md)
+
 ## 📊 GitHub Daily Trending Reports
 
 每日 GitHub 热门项目趋势分析报告，包含：

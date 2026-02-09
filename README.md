@@ -6,6 +6,8 @@ Daily GitHub trending projects research reports.
 
 ### 2026
 - [February 2026](./2026-02-10.md)
+- [February 2026](./2026-02-09.md)
+- [February 2026](./2026-02-07.md)
 
 ## About
 

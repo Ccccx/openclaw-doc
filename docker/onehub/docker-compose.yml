@@ -1,0 +1,33 @@
+version: "3.4"
+
+services:
+  one-hub:
+    image: martialbe/one-api:v0.14.27
+    container_name: one-hub
+    restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/data
+    environment:
+      - REDIS_CONN_STRING=redis://redis # redis
+      - SESSION_SECRET=yjCfa09GsGFBtQRCxv # 修改为随机字符串
+      - USER_TOKEN_SECRET=MX21zWsvB7MFxkd4PH9XBbxe7mq14mbu# 修改为随机字符串,32位以上
+      - TZ=Asia/Shanghai
+      - SYNC_FREQUENCY=60  # 需要定期从数据库加载数据时取消注释该行
+    depends_on:
+      - redis
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "wget -q -O - http://localhost:3000/api/status | grep -o '\"success\":\\s*true' | awk -F: '{print $$2}'",
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    restart: always

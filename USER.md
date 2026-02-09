@@ -5,13 +5,71 @@
 - **Name:** 
 - **What to call them:** 
 - **Pronouns:** *(optional)*
-- **Timezone:** 
-- **Notes:** 
+- **Timezone:** Asia/Shanghai
+- **Avatar:**
 
-## Context
+## 基础信息
 
-*(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)*
+| 项目 | 数据 |
+|-----|------|
+| 身高 | 165cm |
+| 体重 | 76kg |
+| BMI | 27.9（超重） |
+| 目标体重 | 65kg以下 |
 
----
+## 健康状况
 
-The more you know, the better you can help. But remember — you're learning about a person, not building a dossier. Respect the difference.
+- **2型糖尿病**（确诊）
+- **糖尿病肾病**（蛋白尿 711.61 mg/g，需要定期监测肾功能）
+- **脂肪肝**
+
+## 当前用药
+
+- 胰岛素（三餐前）+ 胰岛素（睡前）
+- 胰激肽原酶肠溶片
+- 非诺贝特软胶囊
+- 普罗布考片
+- 沙库巴曲缬沙坦钠片
+
+## 血糖控制目标
+
+- **空腹血糖**: 4.4-7.0 mmol/L
+- **餐后血糖**: <10.0 mmol/L
+- **最近记录**: 4.8 mmol/L（本次）
+- **今晚血糖**: 5.4 mmol/L ✓（达标）
+
+## 待办目标
+
+- [ ] 血糖控制（空腹 4.4-7.0，餐后 <10.0）
+- [ ] 减重至 65kg 以下（需减重 11kg）
+- [ ] 定期监测肾功能
+- [ ] 改善脂肪肝
+
+## 饮食原则
+
+### ✅ 可以吃（优先级高）
+- 低GI主食（荞麦、燕麦、糙米、红豆）
+- 绿叶蔬菜（菠菜、芹菜、西兰花）
+- 优质蛋白（鱼类、禽类、蛋清）
+- 富含Omega-3的鱼类
+
+### ⚠️ 需要限制
+- 高糖水果（荔枝、芒果、西瓜）
+- 精制碳水（白米、白面、糯米）
+- 高盐食物
+- 饱和脂肪
+
+### ❌ 避免
+- 甜食、含糖饮料
+- 加工肉制品
+- 高嘌呤食物（针对肾病）
+- 酒精
+
+## 备注
+
+减重目标：每周减重 0.5-1kg，每月约 2-4kg，预计 3-6 个月达到目标。
+饮食需配合运动（快走、游泳、骑车）和定期血糖监测。
+
+## 联系方式
+
+- **Telegram chatId**: 6766025888

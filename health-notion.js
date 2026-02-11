@@ -6,7 +6,7 @@ const { Client } = require('@notionhq/client');
 const readline = require('readline');
 
 // 配置
-const NOTION_API_KEY = process.env.NOTION_API_KEY || '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';
+const NOTION_API_KEY = process.env.NOTION_API_KEY || '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';
 const PAGE_ID = '3019de7521f88094bed7fe061773107d';
 
 // 子页面ID

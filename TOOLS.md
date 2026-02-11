@@ -16,37 +16,90 @@ Things like:
 ## Examples
 
 ```markdown
-### Notion
+### Health Notion
 
-- **API Key**: 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
-- **Page ID**: 3019de7521f88094bed7fe061773107d (个人健康管理)
-- **同步脚本**: /home/admin/.openclaw/workspace/health-notion.js
-- **定时任务**: 每天 08:00 自动同步
-- **配置方式**: 环境变量 NOTION_API_KEY
+- **Page ID**: 3039de7521f8809894b4cdee8b678021 (个人健康管理主页)
+- **API Key**: `ntn_xxx` (需要替换为你的Notion Integration Token)
+- **Skill路径**: `/home/admin/.openclaw/workspace/skills/health-notion`
+- **主脚本**: `health-notion.py`
 
-### 使用说明
+#### 环境变量配置
 
 ```bash
-# 添加血糖记录
-NOTION_API_KEY=xxx node health-notion.js add-blood 4.8 "本次测量"
+# 必需
+export NOTION_API_KEY=secret_your_integration_token
 
-# 查询血糖记录
-NOTION_API_KEY=xxx node health-notion.js get-blood
+# 必需 - 主页ID
+export NOTION_HEALTH_PAGE_ID=3039de7521f8809894b4cdee8b678021
 
-# 同步USER.md到Notion
-NOTION_API_KEY=xxx node health-notion.js sync
+# 可选 - 功能数据库ID（需在Notion中创建）
+export NOTION_GLUCOSE_DB_ID=xxx
+export NOTION_MEAL_DB_ID=xxx
+export NOTION_WEIGHT_DB_ID=3039de7521f881daa2d1fe674f1dbc12
+export NOTION_MEDICATION_DB_ID=xxx
 ```
 
-**Notion页面结构**:
-- 📊 血糖记录 - 追踪每日血糖变化
-- 🍽️ 饮食日志 - 记录每餐饮食
-- 🏃 运动记录 - 追踪运动情况
-- ⚖️ 体重追踪 - 监控体重变化
-- 💊 用药记录 - 记录用药情况
-- 🏥 病症档案 - 健康档案（同步自USER.md）
+#### 使用方法
 
-- living-room → Main area, 180° wide angle
-- front-door → Entrance, motion-triggered
+```bash
+cd /home/admin/.openclaw/workspace/skills/health-notion
+
+# 同步USER.md到病症档案
+python health-notion.py sync user
+
+# 添加血糖记录
+python health-notion.py add glucose 5.6 "空腹"
+
+# 查询血糖记录（最近7天）
+python health-notion.py get glucose --days 7
+
+# 添加饮食记录
+python health-notion.py add meal "早餐" "燕麦+鸡蛋"
+
+# 记录体重
+python health-notion.py add weight 72.5
+
+# 添加用药记录
+python health-notion.py add medication "胰岛素" "10U"
+
+# 生成健康报告
+python health-notion.py report
+```
+
+#### Notion页面结构
+
+1. **🏥 病症档案** (主页 ID: `3039de7521f8809894b4cdee8b678021`)
+   - 同步USER.md的综合健康信息
+
+2. **📊 血糖记录数据库** (需要创建，配置到 `NOTION_GLUCOSE_DB_ID`)
+   - 字段: 名称、血糖值、时间、备注
+
+3. **🍽️ 饮食日志数据库** (需要创建，配置到 `NOTION_MEAL_DB_ID`)
+   - 字段: 名称、餐饮类型、食物、时间
+
+4. **⚖️ 体重追踪数据库** (需要创建，配置到 `NOTION_WEIGHT_DB_ID`)
+   - 字段: 名称、体重、BMI、日期
+
+5. **💊 用药记录数据库** (需要创建，配置到 `NOTION_MEDICATION_DB_ID`)
+   - 字段: 名称、药物、剂量、时间
+
+#### 定时同步任务
+
+建议设置cron任务每天自动同步：
+```bash
+# 每天早上8点同步USER.md到Notion
+0 8 * * * cd /home/admin/.openclaw/workspace/skills/health-notion && python health-notion.py sync user
+```
+
+#### 设置步骤
+
+1. ✅ 创建Notion Integration，获取API Key
+2. ✅ 在Notion中创建各数据库（血糖、饮食、体重、用药）
+3. ✅ 分享数据库给Integration
+4. ✅ 设置环境变量（API Key和各数据库ID）
+5. ✅ 测试同步命令
+
+---
 
 ### SSH
 

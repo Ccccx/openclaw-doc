@@ -5,6 +5,7 @@ Daily collection of GitHub trending repositories with in-depth analysis.
 ## Reports Index
 
 ### 2026
+- [February 12, 2026](./2026-02-12.md) - AI agents, Claude Code ecosystems, and generative UI frameworks lead trending
 - [February 2026](./2026-02-11.md) - AI/LLM applications dominate today's trending
 
 ## Contributing

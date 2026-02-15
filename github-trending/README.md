@@ -6,6 +6,7 @@
 
 ### 2026年
 
+- [2026-02-15](2026-02-15.md) - OpenClaw生态繁荣、AI编程代理爆发、终端工具成新宠
 - [2026-02-14](2026-02-14.md) - AI Agent工具、Flutter跨平台框架、React前端生态、ClickHouse实时分析受关注
 - [2026-02-12](2026-02-12.md) - AI Agent工具、生成式UI、个人AI基础设施成热点
 
@@ -26,4 +27,4 @@ Reports are automatically generated daily with the latest GitHub trending projec
 
 ---
 
-*Last updated: 2026-02-14*
+*Last updated: 2026-02-15*
